@@ -9,52 +9,49 @@
 
     <TextView
         android:id="@+id/tvTitulo2"
-        android:layout_width="136dp"
-        android:layout_height="38dp"
+        android:layout_width="325dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
         android:text="@string/english"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="16dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etIngles"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_marginTop="16dp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
-<EditText
+    <EditText
         android:id="@+id/etIngles"
         android:layout_width="280dp"
         android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
         android:ems="10"
         android:hint="@string/palabra_traducida"
         android:inputType="text"
         android:text=""
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="73dp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ivImagen"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_marginTop="16dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo2" />
 
     <ImageView
         android:id="@+id/ivImagen"
         android:layout_width="350dp"
         android:layout_height="155dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="183dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="96dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etIngles"
-        app:layout_marginTop="16dp"/>
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <Button
         android:id="@+id/btnVolver"
         android:layout_width="150dp"
         android:layout_height="75dp"
+        android:layout_marginTop="116dp"
         android:text="@string/volver"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="375dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivImagen"
-        app:layout_marginTop="16dp"/>
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivImagen"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
