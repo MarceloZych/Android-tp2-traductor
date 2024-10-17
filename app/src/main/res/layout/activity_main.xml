@@ -9,32 +9,33 @@
 
     <TextView
         android:id="@+id/tvTitulo"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:text="Palabra en español"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:text="@string/palabra_esp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="317dp" />
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="302dp" />
 
     <EditText
         android:id="@+id/etEsp"
-        android:layout_width="412dp"
-        android:layout_height="56dp"
+        android:layout_width="326dp"
+        android:layout_height="67dp"
+        android:hint="@string/palabra"
         android:ems="10"
         android:inputType="text"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="92dp" />
+        tools:layout_editor_absoluteY="91dp" />
 
     <Button
         android:id="@+id/btnTraducir"
         android:layout_width="250dp"
-        android:layout_height="150px"
+        android:layout_height="75dp"
         android:ems="10"
-        android:text="Traducir"
+        android:text="@string/traducir"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="185dp" />
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="205dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

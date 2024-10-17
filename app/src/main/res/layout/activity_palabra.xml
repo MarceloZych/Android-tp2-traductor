@@ -11,38 +11,38 @@
         android:id="@+id/tvTitulo2"
         android:layout_width="136dp"
         android:layout_height="38dp"
-        android:text="English"
+        android:text="@string/english"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="138dp" />
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <EditText
         android:id="@+id/etIngles"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="75dp"
         android:ems="10"
-        android:hint="Palabra Traducida"
+        android:hint="@string/palabra_traducida"
         android:inputType="text"
         android:text=""
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="251dp" />
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="73dp" />
 
     <ImageView
         android:id="@+id/ivImagen"
-        android:layout_width="227dp"
+        android:layout_width="350dp"
         android:layout_height="155dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="393dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="183dp"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Volver"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="@string/volver"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="320dp" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="375dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

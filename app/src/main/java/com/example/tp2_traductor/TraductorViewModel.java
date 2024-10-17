@@ -21,7 +21,7 @@ public class TraductorViewModel extends ViewModel {
         palabraList.add(new Palabra("Conejo", "Rabbit", R.drawable.conejito));
     }
 
-    public void Palabra (String palabraEsp) {
+    public void traducirPalabra(String palabraEsp) {
         for (Palabra palabra : palabraList) {
             if (palabra.getEspanol().equals(palabraEsp)) {
                 palabraTraducida.setValue(palabra.getIngles());

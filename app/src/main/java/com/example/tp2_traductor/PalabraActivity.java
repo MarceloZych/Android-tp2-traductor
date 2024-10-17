@@ -16,6 +16,7 @@ public class PalabraActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         binding = ActivityPalabraBinding.inflate(getLayoutInflater());
         setContentView(R.layout.activity_palabra);
@@ -25,20 +26,20 @@ public class PalabraActivity extends AppCompatActivity {
         String palabraEsp = getIntent().getStringExtra("PalabraEsp");
 
         if (palabraEsp != null) {
-            traductorViewModel.Palabra(palabraEsp);
+            traductorViewModel.traducirPalabra(palabraEsp);
         }
 
         traductorViewModel.getPalabraTraducida().observe(this, new Observer<String>() {
             @Override
-            public void onChanged(String s) {
-                binding.etIngles.setText(s);
+            public void onChanged(String palabraTraducida) {
+                binding.etIngles.setText(palabraTraducida);
             }
         });
 
         traductorViewModel.getImagen().observe(this, new Observer<Integer>() {
             @Override
-            public void onChanged(Integer img) {
-                binding.ivImagen.setImageResource(img);
+            public void onChanged(Integer imagen) {
+                binding.ivImagen.setImageResource(imagen);
             }
         });
 

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TP2-Traductor</string>
+    <string name="palabra_esp">Palabra esp</string>
+    <string name="palabra">Palabra</string>
+    <string name="traducir">Traducir</string>
+    <string name="english">English</string>
+    <string name="palabra_traducida">Palabra Traducida</string>
+    <string name="volver">Volver</string>
 </resources>
