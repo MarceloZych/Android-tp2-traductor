@@ -19,7 +19,7 @@ public class PalabraActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         binding = ActivityPalabraBinding.inflate(getLayoutInflater());
-        setContentView(R.layout.activity_palabra);
+        setContentView(binding.getRoot());
 
         traductorViewModel = new ViewModelProvider(this).get(TraductorViewModel.class);
 

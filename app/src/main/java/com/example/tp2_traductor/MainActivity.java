@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, PalabraActivity.class);
-                intent.putExtra("PalabraEsp", binding.etEsp.getText());
+                intent.putExtra("PalabraEsp", binding.etEsp.getText().toString());
                 startActivity(intent);
             }
         });

@@ -9,33 +9,34 @@
 
     <TextView
         android:id="@+id/tvTitulo"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:text="@string/palabra_esp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="302dp" />
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/palabra_esp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_marginTop="16dp" />
 
     <EditText
+
         android:id="@+id/etEsp"
-        android:layout_width="326dp"
-        android:layout_height="67dp"
-        android:hint="@string/palabra"
-        android:ems="10"
-        android:inputType="text"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="91dp" />
+        android:layout_width="0dp"
+    android:layout_height="67dp"
+    android:hint="@string/palabra"
+    android:ems="10"
+    android:inputType="text"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+    app:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/btnTraducir"
-        android:layout_width="250dp"
+        android:layout_width="150dp"
         android:layout_height="75dp"
-        android:ems="10"
         android:text="@string/traducir"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="205dp" />
-
+        app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/etEsp"
+    app:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
